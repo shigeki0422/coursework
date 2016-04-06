@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_jpassion_myproject_mydomain_Itinerary" object="${itinerary}" path="/itinerarys" z="VM6+ppMfNR9zgewH325otNWuhJQ=">
+    	<c:set var="itinerary" value="${itinerary}" />
+    	<p>Flights :</p>
+      	<c:forEach items="${itinerary.sortedDepartingFlights}" var="flight">
+       		<p>
+       			<c:out value="${flight.airlinecode}" />-<c:out value="${flight.flightnumber}" />-<c:out value="${users.username}" />-<c:out value="${users.sequencenumber}" /> : <c:out value="${flight.departurelocation}" /> - <c:out value="${flight.arrivallocation}" /> : <c:out value="${flight.departureday}" />
+       		</p>
+      	</c:forEach>
+      	
+        <p>Return Flights :</p>
+      	<c:forEach items="${itinerary.sortedReturnFlights}" var="flight">
+       		<p>
+       			<c:out value="${flight.airlinecode}" />-<c:out value="${flight.flightnumber}" />-<c:out value="${users.username}" />-<c:out value="${users.sequencenumber}" /> : <c:out value="${flight.departurelocation}" /> - <c:out value="${flight.arrivallocation}" /> : <c:out value="${flight.departureday}" />
+       		</p>
+      	</c:forEach>
+	    
+      	
+        <field:display field="business" id="s_com_jpassion_myproject_mydomain_Itinerary_business" object="${itinerary}" z="RciAwSEsLphovW8RZBr1SilA74s="/>
+        <field:display field="status" id="s_com_jpassion_myproject_mydomain_Itinerary_status" object="${itinerary}" z="FrUUZq07xJ1zbrLUeHNo05L6eNk="/>
+    </page:show>
+</div>

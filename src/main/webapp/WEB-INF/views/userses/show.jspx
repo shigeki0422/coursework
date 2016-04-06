@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_jpassion_myproject_mydomain_Users" object="${users}" path="/userses" z="wTOCLcJA23tDK+/HzZ0Zc9RdU64=">
+        <field:display field="name" id="s_com_jpassion_myproject_mydomain_Users_name" object="${users}" z="YZfINMijt8fXdINJW60o6519NvY="/>
+        <field:display field="address" id="s_com_jpassion_myproject_mydomain_Users_address" object="${users}" z="mVtpBZJwnF7JvorbkEB6L1Z3Rsc="/>
+        <field:display field="email" id="s_com_jpassion_myproject_mydomain_Users_email" object="${users}" z="dggsRHe7QuxjJJPY2V7g4REz/4o="/>
+        <field:display field="username" id="s_com_jpassion_myproject_mydomain_Users_username" object="${users}" z="enzWB1LHrUvFh9dHKUYS6T+yiAQ="/>
+        <field:display field="password" id="s_com_jpassion_myproject_mydomain_Users_password" object="${users}" z="E1O/StQWMMkEBRppNwzsjuBZbA0="/>
+        <field:display field="roles" id="s_com_jpassion_myproject_mydomain_Users_roles" object="${users}" z="2/Fl4jM+3PHkhcM2IOOmqrolClg="/>
+        <field:display field="cardNumber" id="s_com_jpassion_myproject_mydomain_Users_cardNumber" object="${users}" z="PLbDoaViX+7WJoyWxmP3mpLBjXg="/>
+        <field:display field="expirationDate" id="s_com_jpassion_myproject_mydomain_Users_expirationDate" object="${users}" z="zGW4NNFPVJ628ifXVJuqarvM3t0="/>
+    </page:show>
+</div>

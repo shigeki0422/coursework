@@ -1,0 +1,26 @@
+<aspectj>
+<aspects>
+<aspect name="com.jpassion.myproject.mydomain.Flight_Roo_JavaBean"/>
+<aspect name="com.jpassion.myproject.mydomain.Itinerary_Roo_Configurable"/>
+<aspect name="com.jpassion.myproject.mydomain.Flight_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.jpassion.myproject.mydomain.Users_Roo_ToString"/>
+<aspect name="com.jpassion.myproject.mydomain.Users_Roo_Jpa_Entity"/>
+<aspect name="com.jpassion.myproject.mydomain.Users_Roo_Finder"/>
+<aspect name="com.jpassion.myproject.mydomain.Flight_Roo_Configurable"/>
+<aspect name="com.jpassion.myproject.mydomain.Itinerary_Roo_Finder"/>
+<aspect name="com.jpassion.myproject.mydomain.Users_Roo_JavaBean"/>
+<aspect name="com.jpassion.myproject.mydomain.Itinerary_Roo_Jpa_Entity"/>
+<aspect name="com.jpassion.myproject.mydomain.Flight_Roo_Jpa_Entity"/>
+<aspect name="com.jpassion.myproject.mydomain.Users_Roo_Configurable"/>
+<aspect name="com.jpassion.myproject.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="com.jpassion.myproject.mydomain.Flight_Roo_ToString"/>
+<aspect name="com.jpassion.myproject.mydomain.Itinerary_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.jpassion.myproject.web.ItineraryController_Roo_Controller"/>
+<aspect name="com.jpassion.myproject.mydomain.Itinerary_Roo_JavaBean"/>
+<aspect name="com.jpassion.myproject.mydomain.Itinerary_Roo_ToString"/>
+<aspect name="com.jpassion.myproject.mydomain.Users_Roo_Jpa_ActiveRecord"/>
+<aspect name="com.jpassion.myproject.web.FlightController_Roo_Controller"/>
+<aspect name="com.jpassion.myproject.web.UsersController_Roo_Controller"/>
+</aspects>
+</aspectj>
+

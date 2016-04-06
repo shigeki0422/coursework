@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_jpassion_myproject_mydomain_Itinerary" object="${itinerary}" path="/itinerarys" z="VM6+ppMfNR9zgewH325otNWuhJQ=">
+        <field:display field="flights" id="s_com_jpassion_myproject_mydomain_Itinerary_flights" object="${itinerary}" z="7bAFdvbZY7PNLOMIMgVsG2uwn8g="/>
+        <field:display field="business" id="s_com_jpassion_myproject_mydomain_Itinerary_business" object="${itinerary}" z="RciAwSEsLphovW8RZBr1SilA74s="/>
+        <field:display field="status" id="s_com_jpassion_myproject_mydomain_Itinerary_status" object="${itinerary}" z="FrUUZq07xJ1zbrLUeHNo05L6eNk="/>
+        <field:display field="username" id="s_com_jpassion_myproject_mydomain_Itinerary_username" object="${itinerary}" z="NMsjAsXlWo1BnHhAC2PczFDhy7U="/>
+        <field:display field="returnflights" id="s_com_jpassion_myproject_mydomain_Itinerary_returnflights" object="${itinerary}" z="/8b7Cwr9vnMGzDa/ChzqD/6xnEE="/>
+        <field:display field="numberofpassengers" id="s_com_jpassion_myproject_mydomain_Itinerary_numberofpassengers" object="${itinerary}" z="0vpEca7jqh5qkWWigpduXg/FzBE="/>
+    </page:show>
+</div>

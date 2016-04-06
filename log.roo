@@ -1,0 +1,82 @@
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-03-26 14:38:34
+project --topLevelPackage com.jpassion.myproject
+jpa setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity jpa --class ~.mydomain.Users
+field string --fieldName name --notNull --sizeMax 100
+field string --fieldName address --notNull
+field string --fieldName email --notNull --regexp ^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$
+field string --fieldName username --notNull --sizeMax 50
+field string --fieldName password --notNull --sizeMax 255
+field string --fieldName roles --notNull --sizeMax 50 --value ROLE_USER
+field string --fieldName cardNumber --sizeMin 16 --sizeMax 16
+field string --fieldName expirationDate --sizeMin 4 --sizeMax 4
+entity jpa --class ~.mydomain.Flight
+focus --class  ~.mydomain.Flight
+field string --fieldName airlinecode --value BA --notNull --sizeMin 2 --sizeMax 2
+field string --fieldName airlinename --notNull
+field string --fieldName flightnumber --notNull --sizeMax 3
+field date --fieldName departureday --type java.util.Date
+field string --fieldName departuretime --notNull
+field string --fieldName departurelocation --value LHR --notNull --sizeMin 3 --sizeMax 3
+field date --fieldName arrivalday --type java.util.Date
+field string --fieldName arrivaltime --notNull
+field string --fieldName arrivallocation --value LHR --notNull --sizeMin 3 --sizeMax 3
+field number --fieldName costeconomy  --type java.lang.Float
+field number --fieldName costbusiness  --type java.lang.Float
+field number --fieldName unsoldeconomy --type java.lang.Integer --value 90
+field number --fieldName unsoldbusiness --type java.lang.Integer --value 10
+web mvc setup
+web mvc all --package ~.web
+exit
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-03-26 14:39:08
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-03-26 14:47:52
+entity jpa --class ~.mydomain.Itinerary
+focus --class  ~.mydomain.Itinerary
+field set --fieldName flights --type ~.mydomain.Flight
+field boolean --fieldName business
+web mvc all --package ~.web
+perform test
+security setup
+focus --class ~.mydomain.Users
+finder list
+finder add findUsersesByNameEquals
+finder add findUsersesByUsernameEquas
+finder add findUsersesByUsernameEquals
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-03-27 16:41:24
+// [failed] focus --class ~.mydomain.Itineraryt
+focus --class ~.mydomain.Itinerary
+field date --fieldName created --type java.util.Date
+field string --fieldName status --value reserved --notNull
+field string --fieldName username --notNull
+finder list
+finder add findItineraryByUsernameEquals
+finder add findItinerarysyUsernameEquals
+finder add findItinerarysByUsernameEquals
+field set --fieldName returnflights --type ~.mydomain.Flight
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-01 11:15:25
+focus --class ~.mydomain.Flight
+field date --fieldName departuretime --type java.util.Date
+field date --fieldName arrivaltime --type java.util.Date
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-01 13:13:47
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-01 13:17:47
+focus --class ~.mydomain.Flight
+field string --fieldName departuretime --notNull
+field string --fieldName arrivaltime --notNull
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-01 13:56:49
+focus --class ~.mydomain.Itinerary
+finder list
+finder add findItinerarysByFlights
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-04 10:51:27
+focus --class ~.mydomain.Flight
+finder list
+focus --class ~.mydomain.Itinerary
+finder list
+finder add findItinerarysByReturnflights
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-04 18:13:23
+focus --class ~.mydomain.Itinerary
+field number --fieldName numberofpassengers --type in
+field number --fieldName numberofpassengers --type int
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-04 18:52:41
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-04-05 17:36:31
+focus --class ~.mydomain.Flight
+field boolean --fieldName cancelled --value false

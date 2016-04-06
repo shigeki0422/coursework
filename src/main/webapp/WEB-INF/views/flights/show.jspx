@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_jpassion_myproject_mydomain_Flight" list="false" update="false" delete="false" create="false" object="${flight}" path="/flights" z="TA0NWt1nNiBn61M9AyIYKZxzl88=">
+        <field:display field="airlinecode" id="s_com_jpassion_myproject_mydomain_Flight_airlinecode" object="${flight}" z="yfZrA+Ue96YuyH9ffuGA+HqOBdA="/>
+        <field:display field="airlinename" id="s_com_jpassion_myproject_mydomain_Flight_airlinename" object="${flight}" z="GpNnVczY12jaG8rCHGmNpPSPBMU="/>
+        <field:display field="flightnumber" id="s_com_jpassion_myproject_mydomain_Flight_flightnumber" object="${flight}" z="n+/6F/L8bVA1IIVGgqmTjXST4yA="/>
+        <field:display date="true" dateTimePattern="${flight_departureday_date_format}" field="departureday" id="s_com_jpassion_myproject_mydomain_Flight_departureday" object="${flight}" z="bpYduJVtGbFHIIFVYVMc+zDocxU="/>
+        <field:display field="departurelocation" id="s_com_jpassion_myproject_mydomain_Flight_departurelocation" object="${flight}" z="lTwwMg+5D8tqfjbAPsnBH2A/GrU="/>
+        <field:display date="true" dateTimePattern="${flight_arrivalday_date_format}" field="arrivalday" id="s_com_jpassion_myproject_mydomain_Flight_arrivalday" object="${flight}" z="GO+RNBIR/WlsDjpnO2o1wTTO8pc="/>
+        <field:display field="arrivallocation" id="s_com_jpassion_myproject_mydomain_Flight_arrivallocation" object="${flight}" z="6jA4rpkevYLZYBTNZQh7hqkMBk4="/>
+        <field:display field="costeconomy" id="s_com_jpassion_myproject_mydomain_Flight_costeconomy" object="${flight}" z="zIjXoER4/jGXR6fTEhww/jipres="/>
+        <field:display field="costbusiness" id="s_com_jpassion_myproject_mydomain_Flight_costbusiness" object="${flight}" z="4FqQ5DQoD2+MON5X4dprLqzZOIo="/>
+        <field:display field="departuretime" id="s_com_jpassion_myproject_mydomain_Flight_departuretime" object="${flight}" z="HqBycTm/bkKqHUXuAIZBVCR8BrU="/>
+        <field:display field="arrivaltime" id="s_com_jpassion_myproject_mydomain_Flight_arrivaltime" object="${flight}" z="TP8Xtq2tmqMQv9062PQWut2OV/g="/>
+        <field:display field="cancelled" id="s_com_jpassion_myproject_mydomain_Flight_cancelled" object="${flight}" z="sWiUuk+cL1v0iPofxfpACrdrsY0="/>
+    </page:show>
+</div>

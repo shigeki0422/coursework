@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_jpassion_myproject_mydomain_Users" items="${userses}" z="h3SIq3ZDgeOweqENmU9Ms10/8Fg=">
+        <table:table data="${userses}" id="l_com_jpassion_myproject_mydomain_Users" path="/userses" z="yrhR00AtUCF9RaVMzTy9+oS6xs0=">
+            <table:column id="c_com_jpassion_myproject_mydomain_Users_name" property="name" z="48vADYfxV0L4UjTrIiLhDVZhOjk="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Users_roles" property="roles" z="s2EAM6S3zutzbwet8HRfVh8QMpM="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Users_password" property="password" z="fq8CFtXI3q7ej3SCG5D1m7iuFgk="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Users_address" property="address" z="DeVnLkOYd/ZQ9ONKldJ0ZKIsmXo="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Users_email" property="email" z="C7oMmlGs3WvniIUlYA9iJJdOEVI="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Users_username" property="username" z="1psOpkcyAjHovsG9AMmja9Tkbow="/>
+        </table:table>
+    </page:list>
+</div>

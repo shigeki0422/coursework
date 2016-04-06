@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_jpassion_myproject_mydomain_Itinerary" items="${itinerarys}" z="Seves2QzSdnrGJuW4nIaVeWPBNQ=">
+        <table:mytable data="${itinerarys}" delete="false" id="l_com_jpassion_myproject_mydomain_Itinerary" path="/itinerarys" update="false" z="user-managed">
+            <table:column id="c_com_jpassion_myproject_mydomain_Itinerary_flights" property="flights" z="Mz5BCKdQAN0M3tEzWxhZ8+Yil8s="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Itinerary_business" property="business" z="kSngPu6CB9vd3Y24++JS+eZ/6DM="/>
+            <table:column date="true" dateTimePattern="${itinerary_created_date_format}" id="c_com_jpassion_myproject_mydomain_Itinerary_created" property="created" z="25BfXucMiMofnlimXnxcVtLoL+k="/>
+            <table:column id="c_com_jpassion_myproject_mydomain_Itinerary_status" property="status" z="weMb0MhvLXNRwlwG4EX46k/Qw3s="/>
+            <table:column id="label_com_jpassion_myproject_mydomain_itinerary_totalPrice" property="totalPrice" z="kSngPu6CB9vd3Y24++JS+eZ/6DM="/>
+        </table:mytable>
+    </page:list>
+</div>

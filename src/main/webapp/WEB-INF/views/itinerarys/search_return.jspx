@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByItineraryReturn" id="ff_com_jpassion_myproject_mydomain_Flight" path="/itinerarys">
+        <field:input disableFormBinding="true" field="departurelocation" id="f_com_jpassion_myproject_mydomain_Flight_departurelocation" max="3" min="3" required="true"/>
+        <field:input disableFormBinding="true" field="arrivallocation" id="f_com_jpassion_myproject_mydomain_Flight_arrivallocation" max="3" min="3" required="true"/>
+        <field:datetime dateTimePattern="${flight_departureday_date_format}" disableFormBinding="true" field="departureday" id="f_com_jpassion_myproject_mydomain_Flight_departureday" required="true"/>
+        <field:input type="time" disableFormBinding="true" field="departuretime" id="f_com_jpassion_myproject_mydomain_Flight_departuretime"/>
+        <field:datetime dateTimePattern="${flight_departureday_date_format}" disableFormBinding="true" field="arrivalday" id="f_com_jpassion_myproject_mydomain_Flight_arrivalday" required="true"/>
+        <field:input type="time" disableFormBinding="true" field="arrivaltime" id="f_com_jpassion_myproject_mydomain_Flight_arrivaltime"/>
+        <field:input disableFormBinding="true" field="numberOfPassengers" id="f_number_of_passengers"/>
+        <field:input disableFormBinding="true" field="maxNumberOfStops" id="f_max_number_of_stops"/>
+    </form:find>
+</div>

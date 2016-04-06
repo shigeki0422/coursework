@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="itinerarys/list">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/list.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/show">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/show.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/create">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/create.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/update">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/update.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/search_oneway">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/search_oneway.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/search_return">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/search_return.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/reserved">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/reserved.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/mylist">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/mylist.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/foundItineraryList">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/foundItineraryList.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/booked">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/booked.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/bookedAlready">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/bookedAlready.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/showBookedItinerary">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/showBookedItinerary.jspx"/>
+    </definition>
+<definition extends="default" name="itinerarys/foundItineraryListReturn">
+        <put-attribute name="body" value="/WEB-INF/views/itinerarys/foundItineraryListReturn.jspx"/>
+    </definition>
+</tiles-definitions>

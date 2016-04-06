@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:menu="urn:jsptagdir:/WEB-INF/tags/menu" id="menu" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <menu:menu id="_menu" z="nZaf43BjUg1iM0v70HJVEsXDopc=">
+        <menu:category id="c_users" z="Ysam8XVhG5uotPoUGGxkia1RE/s=">
+            <menu:item id="i_users_new" messageCode="global_menu_register" url="/userses/register?form"/>
+            <menu:item id="i_users_credit" messageCode="global_menu_credit" url="/userses/credit?form"/>
+            <menu:item id="i_itinerary_mylist" messageCode="global_menu_mylist" url="/itinerarys/mylist"/>
+        </menu:category>
+        <menu:category id="c_flight" z="My3aw7st9/lPi4/72GrekPCYuWM=">
+            <menu:item id="i_flight_new" messageCode="global_menu_new" url="/flights?create&amp;form" z="user-managed"/>
+            <menu:item id="i_flight_list" messageCode="global_menu_list" url="/flights?list_all&amp;page=1&amp;size=${empty param.size ? 10 : param.size}" z="user-managed"/>
+        </menu:category>
+        <menu:category id="c_itinerary" z="MTsl1EdaNfSHDNIzYvi1oVSRSAs=">
+            <menu:item id="fi_flight_departurelocationequals" messageCode="global_menu_find_oneway" url="/itinerarys?search_one&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+            <menu:item id="fi_flight_departurelocationequals" messageCode="global_menu_find_return" url="/itinerarys?search_return&amp;form&amp;page=1&amp;size=${empty param.size ? 10 : param.size}"/>
+        </menu:category>
+    </menu:menu>
+</div>
